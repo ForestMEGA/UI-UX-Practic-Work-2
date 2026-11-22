@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Research | The CERBERUS (Lab-02)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="header-title">
+            <h1>THE CERBERUS // UX RESEARCH ARTIFACTS</h1>
+            <p>ЛАБОРАТОРНА РОБОТА №2: ПЕРСОНИ, КАРТА ЕМПАТІЇ ТА CJM</p>
+        </div>
+        <div class="author-badge">AUTHOR: MYKYTA</div>
+    </div>
+
+    <div class="nav-tabs">
+        <button class="tab-btn active" onclick="openTab('personas', this)">1. USER PERSONAS (3 + ANTI)</button>
+        <button class="tab-btn" onclick="openTab('empathy', this)">2. EMPATHY MAP (МАРКУС ВЕНС)</button>
+        <button class="tab-btn" onclick="openTab('cjm', this)">3. USER JOURNEY MAP (БОНУС)</button>
+    </div>
+
+    <!-- ВКЛАДКА 1: ПЕРСОНИ -->
+    <div id="personas" class="tab-content active">
+        <div class="personas-grid">
+            
+            <div class="persona-card">
+                <div class="p-header">
+                    <div class="p-avatar">MV</div>
+                    <div>
+                        <div class="p-role">Первинна персона (B2B Замовник)</div>
+                        <div class="p-name">Маркус Венс (Marcus Vance)</div>
+                        <div class="p-meta">48 років • Х'юстон, США • Директор з безпеки</div>
+                    </div>
+                </div>
+                <div class="p-block">
+                    <h4>ПРОФЕСІЙНИЙ КОНТЕКСТ</h4>
+                    <p>Відповідає за безпеку бурових установок та конвоїв нафтової корпорації у нестабільних регіонах. Цінує час, дисципліну та конфіденційність.</p>
+                </div>
+                <div class="p-block">
+                    <h4>ЦІЛІ ТА ЗАДАЧІ</h4>
+                    <ul>
+                        <li>Швидко найняти групу ветеранів США для охорони об'єкта.</li>
+                        <li>Отримати прямий зашифрований зв'язок із штабом ПВК.</li>
+                    </ul>
+                </div>
+                <div class="p-block">
+                    <h4>БОЛЬОВІ ТОЧКИ</h4>
+                    <ul>
+                        <li>Звичайні охоронці панікують під час реальних атак.</li>
+                        <li>Узгодження контрактів триває тижнями.</li>
+                    </ul>
+                </div>
+                <div class="p-block">
+                    <h4>СЦЕНАРІЙ ВЗАЄМОДІЇ</h4>
+                    <p>Отримує дані про загрозу. Заходить у додаток, перемикає мову на ENG, обирає «Object Security» та відправляє координати через форму зв'язку.</p>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="p-header">
+                    <div class="p-avatar">OK</div>
+                    <div>
+                        <div class="p-role">Вторинна персона (Клієнт курсів)</div>
+                        <div class="p-name">Олена Ковальчук (Olena Kovalchuk)</div>
+                        <div class="p-meta">31 рік • Варшава / Київ • Військовий журналіст</div>
+                    </div>
+                </div>
+                <div class="p-block">
+                    <h4>ПРОФЕСІЙНИЙ КОНТЕКСТ</h4>
+                    <p>Фотокореспондент у гарячих точках. Працює в автономних умовах, активно користується сучасними мобільними сервісами.</p>
+                </div>
+                <div class="p-block">
+                    <h4>ЦІЛІ ТА ЗАДАЧІ</h4>
+                    <ul>
+                        <li>Пройти інтенсив із виживання в місті та тактичної медицини.</li>
+                        <li>Навчатися лише у реальних ветеранів бойових дій.</li>
+                    </ul>
+                </div>
+                <div class="p-block">
+                    <h4>БОЛЬОВІ ТОЧКИ</h4>
+                    <ul>
+                        <li>Цивільні курси занадто «туристичні».</li>
+                        <li>Непрозорі ціни та складна реєстрація на сайтах.</li>
+                    </ul>
+                </div>
+                <div class="p-block">
+                    <h4>СЦЕНАРІЙ ВЗАЄМОДІЇ</h4>
+                    <p>Відкриває вкладку «Курси», порівнює програми <i>Urban Shield Evasion</i> ($3,200) та <i>Alpine Extraction</i> ($4,500), подає заявку в один клік.</p>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="p-header">
+                    <div class="p-avatar">AS</div>
+                    <div>
+                        <div class="p-role">Додаткова персона (VIP-клієнт)</div>
+                        <div class="p-name">Артур Стерлінг (Arthur Sterling)</div>
+                        <div class="p-meta">39 років • Лондон / Женева • Інвестор</div>
+                    </div>
+                </div>
+                <div class="p-block">
+                    <h4>ПРОФЕСІЙНИЙ КОНТЕКСТ</h4>
+                    <p>Крипто-інвестор, подорожує з великими активами. Має високий ризик викрадення. Цінує статус, преміальний дизайн та анонімність.</p>
+                </div>
+                <div class="p-block">
+                    <h4>ЦІЛІ ТА ЗАДАЧІ</h4>
+                    <ul>
+                        <li>Замовити непомітну особисту охорону (Low-profile) для поїздок.</li>
+                        <li>Пройти індивідуальний курс із протидії викраденню.</li>
+                    </ul>
+                </div>
+                <div class="p-block">
+                    <h4>БОЛЬОВІ ТОЧКИ</h4>
+                    <ul>
+                        <li>Не довіряє застарілим сайтам через ризик витоку даних.</li>
+                        <li>Звичайні охоронці привертають занадто багато уваги.</li>
+                    </ul>
+                </div>
+                <div class="p-block">
+                    <h4>СЦЕНАРІЙ ВЗАЄМОДІЇ</h4>
+                    <p>Оцінює захищений темний інтерфейс (SECURED), переходить у вкладку «Зв'язок» та замовляє індивідуальний VIP-супровід.</p>
+                </div>
+            </div>
+
+            <div class="persona-card anti">
+                <div class="p-header">
+                    <div class="p-avatar">NO</div>
+                    <div>
+                        <div class="p-role">Антиперсона (Negative Persona)</div>
+                        <div class="p-name">Денис (Студент-геймер)</div>
+                        <div class="p-meta">19 років • Студент • Фанат страйкболу</div>
+                    </div>
+                </div>
+                <div class="p-block">
+                    <h4>ЧОМУ НЕ НАШ КЛІЄНТ</h4>
+                    <ul>
+                        <li><strong>Немає бюджету:</strong> Шукає безкоштовні відео, не оплатить курси від $3,200.</li>
+                        <li><strong>Інша мотивація:</strong> Сприймає військову справу як гру (Call of Duty).</li>
+                        <li><strong>Шкода:</strong> Створюватиме фейкові заявки у формі зв'язку.</li>
+                    </ul>
+                </div>
+                <div class="p-block">
+                    <h4>ЯК ІНТЕРФЕЙС ЙОГО ВІДСІКАЄ</h4>
+                    <p>Відкритий високий прайс ($3,200–$4,500), строгий B2B-інтерфейс без ігрових елементів та вимога вказати організацію.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ВКЛАДКА 2: КАРТА ЕМПАТІЇ -->
+    <div id="empathy" class="tab-content">
+        <div class="empathy-grid">
+            <div class="emp-box">
+                <h3>ЩО ДУМАЄ І ВІДЧУВАЄ? (THINKS & FEELS)</h3>
+                <ul>
+                    <li>Відчуває тиск відповідальності за життя персоналу на об'єкті.</li>
+                    <li>Думає: <i>«Мені потрібні загартовані профі США, які не втечуть при першому пострілі»</i>.</li>
+                    <li>Хвилюється через можливий витік даних про переміщення вантажів.</li>
+                    <li>Відчуває впевненість, коли бачить суворий технологічний підхід.</li>
+                </ul>
+            </div>
+            <div class="emp-box">
+                <h3>ЩО БАЧИТЬ? (SEES)</h3>
+                <ul>
+                    <li>Зведення новин про загострення конфліктів у регіоні видобутку.</li>
+                    <li>Застарілі сайти конкурентів із банальними фотографіями.</li>
+                    <li>У додатку <b>The CERBERUS</b> бачить чіткий HUD-приціл, статуси шифрування та контакт штабу.</li>
+                </ul>
+            </div>
+            <div class="emp-box">
+                <h3>ЩО ЧУЄ? (HEARS)</h3>
+                <ul>
+                    <li>Від ради директорів: <i>«Видобуток не зупиняємо, вирішуй питання охорони негайно»</i>.</li>
+                    <li>Від колег: <i>«Ветерани спецпідрозділів США — єдина гарантія на складних об'єктах»</i>.</li>
+                    <li>Попередження розвідки про активність диверсійних груп біля периметра.</li>
+                </ul>
+            </div>
+            <div class="emp-box">
+                <h3>ЩО КАЖЕ І РОБИТЬ? (SAYS & DOES)</h3>
+                <ul>
+                    <li>Спілкується коротко, діловими та військовими термінами.</li>
+                    <li>Одразу передає координати, рівень загрози та вимагає розгортання групи.</li>
+                    <li>Особисто перевіряє репутацію та бойовий бекграунд підрядників.</li>
+                </ul>
+            </div>
+            <div class="emp-box" style="border-color: rgba(239, 68, 68, 0.3);">
+                <h3 style="color: #EF4444;">БОЛІ (PAINS)</h3>
+                <ul>
+                    <li>Ризик втрати людей та багатомільйонного обладнання.</li>
+                    <li>Бюрократія, повільна реакція підрядників, некомпетентність охоронців.</li>
+                </ul>
+            </div>
+            <div class="emp-box" style="border-color: rgba(16, 185, 129, 0.3);">
+                <h3 style="color: #10B981;">ВИГОДИ (GAINS)</h3>
+                <ul>
+                    <li>Миттєвий вихід на командування ПВК через зашифрований канал.</li>
+                    <li>Гарантія захисту периметра ветеранами бойових дій.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="cjm" class="tab-content">
+        <div class="cjm-table-wrapper">
+            <table class="cjm">
+                <thead>
+                    <tr>
+                        <th>Етап шляху (Маркус Венс)</th>
+                        <th>1. Усвідомлення загрози</th>
+                        <th>2. Вхід у додаток</th>
+                        <th>3. Вибір послуги</th>
+                        <th>4. Оформлення запиту</th>
+                        <th>5. Підтвердження</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="row-header">Дії користувача</td>
+                        <td>Отримує звіт розвідки про ризик нападу на об'єкт.</td>
+                        <td>Відкриває <b>The CERBERUS</b>, перемикає мову на ENG.</td>
+                        <td>Вивчає картку <i>Object Security</i> у вкладці «Послуги».</td>
+                        <td>У «Зв'язку» вводить назву корпорації та деталі загрози.</td>
+                        <td>Тисне «Надіслати запит», отримує сповіщення штабу.</td>
+                    </tr>
+                    <tr>
+                        <td class="row-header">Точки контакту</td>
+                        <td>Внутрішній звіт компанії.</td>
+                        <td>HUD Splash Screen, кнопка UKR/ENG.</td>
+                        <td>Каталог послуг (Services).</td>
+                        <td>Форма зв'язку (Contact).</td>
+                        <td>Системне вікно, контакти HQ.</td>
+                    </tr>
+                    <tr>
+                        <td class="row-header">Емоції та стан</td>
+                        <td><span class="emotion-tag emo-bad">ТРИВОГА</span><br>Потрібно діяти негайно.</td>
+                        <td><span class="emotion-tag emo-mid">ЗОСЕРЕДЖЕНІСТЬ</span><br>Інтерфейс викликає довіру.</td>
+                        <td><span class="emotion-tag emo-good">ВПЕВНЕНІСТЬ</span><br>Чіткий опис без зайвої «води».</td>
+                        <td><span class="emotion-tag emo-good">КОНТРОЛЬ</span><br>Мінімум полів для заповнення.</td>
+                        <td><span class="emotion-tag emo-good">ПОЛЕГШЕННЯ</span><br>Запит прийнято в роботу.</td>
+                    </tr>
+                    <tr>
+                        <td class="row-header">Бар'єри / Болі</td>
+                        <td>Страх не встигнути знайти бійців.</td>
+                        <td>Мовний бар'єр (вирішено перемикачем).</td>
+                        <td>Сумніви щодо досвіду оперативників.</td>
+                        <td>Побоювання щодо витоку даних.</td>
+                        <td>Очікування швидкого фідбеку.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openTab(tabId, btnElement) {
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        document.getElementById(tabId).classList.add('active');
+        btnElement.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
